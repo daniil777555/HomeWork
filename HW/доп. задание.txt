@@ -1,0 +1,3 @@
+https://jsfiddle.net/2fj39eg4/   -  задание с картами.
+
+Как убрать отступы между элементами при использовании display: inline-block? - font-size:0;
