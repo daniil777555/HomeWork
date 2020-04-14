@@ -29,7 +29,7 @@ body {
 
 .short-desc {
     padding: 0;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
 }
 
 .short-desc-list {
@@ -109,6 +109,7 @@ body {
 }
 
 .pluses-text {
+    list-style-type: none;
     clear: both;
     font-size: 16px;
     line-height: 24px;
@@ -125,7 +126,6 @@ body {
 }
 
 .screenshots {
-    min-height: 487px;
     padding: 50px 66px 50px 50px;
 }
 
