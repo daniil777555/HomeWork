@@ -1,0 +1,517 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p, span{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.slider{
+    background: url(../img/bg_photo.jpg) no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 375px 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    cursor: pointer;
+    display: flex;
+}
+
+.logo-text{
+    display: block;
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: -1.36px;
+    color: #ffffff;
+}
+
+.svg-logo{
+    fill: #fff;
+}
+
+.logo:active{
+    box-shadow:  0px 0px 0px 9px rgba(25, 14, 9, 0.16);
+    
+}
+
+.logo:hover > .logo-text{
+    color: #c7b299;
+}
+
+.logo:hover > .svg-logo{
+    fill: #c7b299;
+}
+
+.menu{
+    align-self: center;
+    position: relative;
+}
+
+.menu-link{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.menu-link:hover{
+    color: #c7b299;
+}
+
+.menu-link:active{
+    color: #cac9c9;
+}
+
+.shop-basket{
+    cursor: pointer;
+    padding: 0;
+    margin: 0 15px 0 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.shop-basket:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f291";
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.search-icon{
+    display: inherit;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search-icon:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.shop-basket:hover:before, .search-icon:hover:before{
+    color: #c7b299;
+}
+
+.shop-basket:active:before, .search-icon:active:before{
+    color: #cac9c9;
+}
+
+.search{
+    display: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+#search-cheked{
+    display: none;
+}
+
+.search-form{
+    display: inline-flex;
+    position: relative;
+}
+
+.search-submit{
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f291";
+    color: #c7b299;
+    font-size: 20px;
+}
+
+.search-cheked-off{
+    display: none;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: -58px;
+    left: -769px;
+    z-index: 10;
+}
+
+.search-submit:hover{
+    color: #fff;
+}
+
+#search-cheked:checked ~ .search-cheked-off{
+    display: block;
+}
+
+#search-cheked:checked ~ .search-icon-label > .search-icon{
+    opacity: 0;
+}
+
+#search-cheked:checked ~ .search-form > .search{
+    display: block;
+    position: absolute;
+    z-index: 11;
+    left: 40px;
+    top: -20px;
+}
+
+#search-cheked:checked ~ .search-form > .search-submit{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    z-index: 11;
+
+}
+
+
+.karusel{
+    position: relative;
+    display: flex;
+    padding: 280px 150px 42px;
+    box-sizing: border-box;
+}
+
+.arrow-control{
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+    color: #ffffff;
+}
+
+.arrow-control:hover{
+    opacity: 1;
+    color: #d3c1ad;
+}
+
+.arrow-control:active{
+    color: #ffffff;
+}
+
+.arrow-left{
+    margin: 60px 475px 0 0;
+}
+
+.arrow-right{
+    margin: 60px 0 0 475px;
+}
+
+/* Здесь нужно обращаться по вложенности потому, что по-другому margin не убирается  */
+i.arrow-control:before{
+    margin: 0;
+    padding: 0;
+}
+/* Здесь нужно обращаться по вложенности потому, что по-другому margin не убирается  */
+
+.karusel-text{
+    text-align: center;
+    width: 589px;
+}
+
+.karusel-text-h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.karusel-text-h1{
+    margin: 0 0 19px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.karusel-text-p{
+    margin: 0 0 45px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.karusel-text-button{
+    display: inline-block;
+    margin: 0 0 330px 0;
+    padding: 15px 38px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.karusel-text-button:hover{
+    color: #cac9c9;
+    background-color: #ad9987;
+}
+
+.karusel-text-button:active{
+    color: #ffffff;
+    background-color: #8a796a;
+    box-shadow:none;
+}
+
+.pagination{
+    position: absolute;
+    align-self: flex-end;
+    display: flex;
+    text-align: center;
+    top: 865px;
+    left: 918px;
+}
+
+.circle{
+    cursor:pointer;
+    margin: 0 11px 0 0;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-image: inherit;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #ffffff;
+}
+
+.circle:last-child{
+    margin: 0;
+}
+
+.circle-active{
+    margin: -2px 7px 0px 0;
+    width: 15px;
+    height: 15px;
+    border: solid 2px #d3c1ad;
+    box-sizing: border-box;
+    background: none;
+}
+
+.circle:hover{
+    margin: -2px 7px 0px 0;
+    width: 15px;
+    height: 15px;
+    border: solid 2px #d3c1ad;
+    box-sizing: border-box;
+    background: none;
+}
+
+.our-services{
+    margin: 0;
+    padding: 83px 376px 80px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.service-item{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 34px 0 0;
+}
+
+.service-item:last-child{
+    margin: 0;
+}
+
+.service-item:after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+}
+
+.service-icon{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    color: #555555;
+}
+
+.service-item-h4{
+    margin: 25px 0 15px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #555555;
+}
+
+.service-item-p{
+    margin:0 0 25px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #8c8c8c;
+}
+
+.service-item:hover > .service-icon{
+    color: #c7b299;
+}
+
+.service-item:hover > .service-item-h4{
+    color: #c7b299;
+}
+
+.service-item:hover:after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #c7b299;
+}
+
+.item-active:after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #c7b299;
+}
+
+.service-icon-active, .item-h4-active{
+    color: #c7b299;
+}
+
+.reliz-idea{
+    background: #fbfaf8;
+    padding: 80px 580px 503px;
+    position: relative;
+}
+
+.reliz-idea-h2{
+    margin: 0 0 24px 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #555555;
+}
+
+.reliz-idea-p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8c8c8c;
+}
+
+.bg-img-back-left{
+    width: 770px;
+    height: 400px;
+    background: url(../img/browser_left.jpg) no-repeat ;
+    position: absolute;
+    top: 300px;
+    left: 340px;
+}
+
+.bg-img-back-right{
+    width: 770px;
+    height: 400px;
+    background: url(../img/browser_right.jpg) no-repeat ;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+.bg-img-main{
+    width: 770px;
+    height: 482px;
+    background: url(../img/browser_main.jpg) no-repeat ;
+    position: absolute;
+    top: 220px;
+    left: 575px;
+    z-index: 2;
+}
+
+.bg-img-back-left:hover{
+    position: absolute;
+    top: 220px;
+    left: 575px;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.bg-img-back-left:hover ~ .bg-img-main{
+    position: absolute;
+    top: 300px;
+    left: 340px;
+    z-index: 1;
+}
+
+.bg-img-back-right:hover{
+    position: absolute;
+    top: 220px;
+    left: 575px;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.bg-img-back-right:hover + .bg-img-main{
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    z-index: 1;
+}
+
