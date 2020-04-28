@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../fonts/Releway/Raleway-Regular.ttf') format('ttf'),
+         url('../fonts/Releway/Raleway-Medium.ttf') format('ttf'),
+         url('../fonts/Releway/Raleway-SemiBold.ttf') format('ttf'),
+         url('../fonts/Releway/Raleway-Bold.ttf') format('ttf'),
+         url('../fonts/Releway/Raleway-ExtraBold.ttf') format('ttf'),;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserat/Montserrat-ExtraLight.ttf') format('ttf'),
+        url('../fonts/Montserat/Montserrat-Light.ttf') format('ttf'),
+        url('../fonts/Montserat/Montserrat-Thin.ttf') format('ttf'),
+        url('../fonts/Montserat/Montserrat-Medium.ttf') format('ttf'),
+        url('../fonts/Montserat/Montserrat-Regular.ttf') format('ttf'),
+        url('../fonts/Montserat/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2') format('woff2');
+        font-display: swap;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -32,12 +54,12 @@ a{
 
 .header{
     display: flex;
-    justify-content: space-between;
-    padding: 40px 375px 0;
+    padding: 40px 360px 0;
     box-sizing: border-box;
 }
 
 .logo{
+    margin: 0 200px 0 0;
     cursor: pointer;
     display: flex;
 }
@@ -47,9 +69,9 @@ a{
     align-self: center;
     font-family: 'Raleway', sans-serif;
     font-size: 34px;
-    font-weight: normal;
-    line-height: normal;
-    letter-spacing: -1.36px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     color: #ffffff;
 }
 
@@ -77,11 +99,16 @@ a{
 
 .menu-link{
     margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
+}
+
+.menu-link:last-child{
+    margin: 0;
 }
 
 .menu-link:hover{
@@ -92,6 +119,13 @@ a{
     color: #cac9c9;
 }
 
+.button-wrp{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 65px;
+}
+
 .shop-basket{
     cursor: pointer;
     padding: 0;
@@ -99,14 +133,7 @@ a{
     background: none;
     border: none;
     outline: none;
-}
-
-.shop-basket:before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f291";
-    color: #ffffff;
-    font-size: 20px;
+    fill: #fff;
 }
 
 .search-icon{
@@ -126,8 +153,16 @@ a{
     font-size: 20px;
 }
 
-.shop-basket:hover:before, .search-icon:hover:before{
+.shop-basket:hover{
+    fill: #c7b299;;
+}
+
+.search-icon:hover:before{
     color: #c7b299;
+}
+
+.shop-basket:active{
+    fill: #cac9c9;
 }
 
 .shop-basket:active:before, .search-icon:active:before{
@@ -148,11 +183,6 @@ a{
     display: none;
 }
 
-.search-form{
-    display: inline-flex;
-    position: relative;
-}
-
 .search-submit{
     display: none;
     padding: 0;
@@ -167,13 +197,18 @@ a{
     font-size: 20px;
 }
 
+.search-form{
+    display: inline-flex;
+    position: relative;
+}
+
 .search-cheked-off{
     display: none;
     position: absolute;
     width: 1920px;
     height: 1080px;
     top: -58px;
-    left: -769px;
+    left: 98px;
     z-index: 10;
 }
 
@@ -194,14 +229,14 @@ a{
     position: absolute;
     z-index: 11;
     left: 40px;
-    top: -20px;
+    top: -14px;
 }
 
 #search-cheked:checked ~ .search-form > .search-submit{
     display: block;
     position: absolute;
     left: 10px;
-    top: -18px;
+    top: -11px;
     z-index: 11;
 
 }
@@ -320,6 +355,7 @@ i.arrow-control:before{
 }
 
 .circle{
+    display: block;
     cursor:pointer;
     margin: 0 11px 0 0;
     width: 11px;
@@ -366,6 +402,7 @@ i.arrow-control:before{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     margin: 0 34px 0 0;
 }
@@ -382,10 +419,10 @@ i.arrow-control:before{
 }
 
 .service-icon{
+    height: 47px;
     margin: 0;
     padding: 0;
-    font-size: 45px;
-    color: #555555;
+    fill: #555555;
 }
 
 .service-item-h4{
@@ -407,7 +444,7 @@ i.arrow-control:before{
 }
 
 .service-item:hover > .service-icon{
-    color: #c7b299;
+    fill: #c7b299;
 }
 
 .service-item:hover > .service-item-h4{
@@ -429,6 +466,10 @@ i.arrow-control:before{
 }
 
 .service-icon-active, .item-h4-active{
+    fill: #c7b299;
+}
+
+.item-h4-active{
     color: #c7b299;
 }
 
