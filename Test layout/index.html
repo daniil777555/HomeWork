@@ -33,6 +33,7 @@
                 </nav>
                 <div class="button-wrp">
                 <!-- Это все для того, чтобы при нажатии на лупу появлялось поле поиска, при активном плое, если нажать на любое место кроме поля, оно пропадет. -->
+                    <button class="shop-basket">
                         <svg class="shop-basket" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             width="20" height="27"  viewBox="0 0 20 27">
@@ -40,13 +41,13 @@
                             d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z"/>
                         </svg>
                     </button>
-                        <input id="search-cheked" type="checkbox">
-                        <label class="search-icon-label" for="search-cheked"><div class="search-icon"></div></label>
-                        <form action="#" class="search-form">
-                            <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
-                            <input type="search" class="search">
-                        </form>
-                        <label class="search-cheked-off" for="search-cheked"></label>
+                    <input id="search-cheked" type="checkbox">
+                    <label class="search-icon-label" for="search-cheked"><div class="search-icon"></div></label>
+                    <form action="#" class="search-form">
+                        <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+                        <input type="search" class="search">
+                    </form>
+                    <label class="search-cheked-off" for="search-cheked"></label>
                 </div>
             </header>
             <div class="karusel">
@@ -114,6 +115,7 @@
         <section class="reliz-idea">
             <h2 class="reliz-idea-h2">Waxom is Realization of your Ideas.</h2>
             <p class="reliz-idea-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <!-- Картинки поднимаются вверх при масштабе 25%, я не нашел проблему, можете подсказать пожалуйста -->
             <div class="bg-img-back-left"></div>
             <div class="bg-img-back-right"></div>
             <div class="bg-img-main"></div>
@@ -129,11 +131,11 @@
             <h2 class="our-project-h2">Our Latest Projects.</h2>
             <p class="our-project-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus&nbsp;dynamicus,&nbsp;qui&nbsp;sequitur&nbsp;mutationem&nbsp;consuetudium.</p>
             <div class="our-project-choise-link">
-                <a href="#" class="our-project-link our-project-link-active">All</a>
-                <a href="#" class="our-project-link">Web Design</a>
-                <a href="#" class="our-project-link">Mobile App</a>
-                <a href="#" class="our-project-link">Illustration</a>
-                <a href="#" class="our-project-link">Photography</a>
+                <button class="our-project-link our-project-link-active">All</button>
+                <button class="our-project-link">Web Design</button>
+                <button class="our-project-link">Mobile App</button>
+                <button  class="our-project-link">Illustration</button>
+                <button class="our-project-link">Photography</button>
             </div>
             <div class="projects">
                 <article class="projects-item">

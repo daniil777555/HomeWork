@@ -268,15 +268,15 @@ a{
     display: block;
     position: absolute;
     z-index: 11;
-    left: 40px;
-    top: -14px;
+    left: -225px;
+    top: 41px;
 }
 
 #search-cheked:checked ~ .search-form > .search-submit{
     display: block;
     position: absolute;
-    left: 10px;
-    top: -11px;
+    left: -270px;
+    top: 45px;
     z-index: 11;
 
 }
@@ -515,6 +515,8 @@ i.arrow-control:before{
 }
 
 .reliz-idea{
+    display: flex;
+    flex-direction: column;
     background: #fbfaf8;
     padding: 80px 580px 503px;
     box-sizing: border-box;
@@ -541,6 +543,7 @@ i.arrow-control:before{
 }
 
 .bg-img-back-left{
+    justify-self: flex-end;
     width: 770px;
     height: 400px;
     background: url(../img/browser_left.jpg) no-repeat ;
@@ -550,6 +553,7 @@ i.arrow-control:before{
 }
 
 .bg-img-back-right{
+    justify-self: flex-end;
     display: block;
     width: 770px;
     height: 400px;
@@ -560,6 +564,7 @@ i.arrow-control:before{
 }
 
 .bg-img-main{
+    justify-self: flex-end;
     width: 770px;
     height: 482px;
     background: url(../img/browser_main.jpg) no-repeat ;
@@ -692,9 +697,13 @@ i.arrow-control:before{
 }
 
 .our-project-link{
+    cursor: pointer;
+    background: none;
+    outline: none;
     margin: 0 10px 0 0;
     padding: 8px 18px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
